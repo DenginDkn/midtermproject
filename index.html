@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Education Appointment Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#" target="_blank">Home</a></li>
+      <li><a href="blankpage.html" target="_blank">Categories</a></li>
+      <li><a href="blankpage.html" target="_blank">About</a></li>
+      <li><a href="blankpage.html" target="_blank">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>EDUCATION APPOINTMENT FORM</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="phonenumber" placeholder="Phone number" name="phonenumber" required>
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="city">City:</label>
+        <select class="form-control" id="city" name="city" required>
+          <option value="" selected disabled>Select a City</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="courseType">Course Type:</label>
+        <select class="form-control" id="courseType" name="courseType" required>
+          <option value="" selected disabled>Select a Course Type</option>
+        </select>
+      </div>
+    </div>
+    <label for="located"><span style="color: rgb(0, 0, 0);">How would you like to be located ?</span></label>
+    <div class="form-group">
+      <select class="form-control" id="location">
+        <option>By Phone</option>
+        <option>By Email</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <select class="form-control" id="hours">
+        <option selected value="">Hours : 6 am 11 am</option>
+        <option value="9h-11h">Hours : 8 am 2 pm</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> I agree to the <span style="color: #000; text-decoration: underline;">Terms and Conditions</span></label>
+    </div>
+    <a href="submitpage.html" button type="button" class="btn btn-primary active">Request an appointment</button></a>
+  </form>
+</div>
+
+</body>
+</html>
