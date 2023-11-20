@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html { 
+    scroll-behavior: smooth
+  }
+
+  body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/backgroundimage.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.checkbox label {
+    color: gray;
+    font-weight: bold; 
+  }
+
+  .container {
+    background-color: rgb(241, 241, 241);
+    padding: 40px;
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+  }
+
+
+  h2 {
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+  }
+
+  label {
+    color: #000; /* Etiket rengi */
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
